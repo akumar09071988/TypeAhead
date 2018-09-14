@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF35E80E2139AB9A00C65371 /* AutoCompleteUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF35E80D2139AB9A00C65371 /* AutoCompleteUIView.swift */; };
+		EF86763720D4880F00CC8DB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86763620D4880F00CC8DB8 /* AppDelegate.swift */; };
+		EF86763920D4880F00CC8DB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86763820D4880F00CC8DB8 /* ViewController.swift */; };
+		EF86763C20D4880F00CC8DB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF86763A20D4880F00CC8DB8 /* Main.storyboard */; };
+		EF86763E20D4881000CC8DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF86763D20D4881000CC8DB8 /* Assets.xcassets */; };
+		EF86764120D4881000CC8DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF86763F20D4881000CC8DB8 /* LaunchScreen.storyboard */; };
+		EF86764C20D4881000CC8DB8 /* TypeAheadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86764B20D4881000CC8DB8 /* TypeAheadTests.swift */; };
+		EF86765720D4881000CC8DB8 /* TypeAheadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86765620D4881000CC8DB8 /* TypeAheadUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF86764820D4881000CC8DB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF86762B20D4880E00CC8DB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF86763220D4880E00CC8DB8;
+			remoteInfo = TypeAhead;
+		};
+		EF86765320D4881000CC8DB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF86762B20D4880E00CC8DB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF86763220D4880E00CC8DB8;
+			remoteInfo = TypeAhead;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF35E80D2139AB9A00C65371 /* AutoCompleteUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteUIView.swift; sourceTree = "<group>"; };
+		EF86763320D4880F00CC8DB8 /* TypeAhead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypeAhead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF86763620D4880F00CC8DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF86763820D4880F00CC8DB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF86763B20D4880F00CC8DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF86763D20D4881000CC8DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF86764020D4881000CC8DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF86764220D4881000CC8DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF86764720D4881000CC8DB8 /* TypeAheadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypeAheadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF86764B20D4881000CC8DB8 /* TypeAheadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAheadTests.swift; sourceTree = "<group>"; };
+		EF86764D20D4881000CC8DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF86765220D4881000CC8DB8 /* TypeAheadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypeAheadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF86765620D4881000CC8DB8 /* TypeAheadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAheadUITests.swift; sourceTree = "<group>"; };
+		EF86765820D4881000CC8DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF86763020D4880E00CC8DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF86764420D4881000CC8DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF86764F20D4881000CC8DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF86762A20D4880E00CC8DB8 = {
+			isa = PBXGroup;
+			children = (
+				EF86763520D4880F00CC8DB8 /* TypeAhead */,
+				EF86764A20D4881000CC8DB8 /* TypeAheadTests */,
+				EF86765520D4881000CC8DB8 /* TypeAheadUITests */,
+				EF86763420D4880F00CC8DB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF86763420D4880F00CC8DB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF86763320D4880F00CC8DB8 /* TypeAhead.app */,
+				EF86764720D4881000CC8DB8 /* TypeAheadTests.xctest */,
+				EF86765220D4881000CC8DB8 /* TypeAheadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF86763520D4880F00CC8DB8 /* TypeAhead */ = {
+			isa = PBXGroup;
+			children = (
+				EF86763620D4880F00CC8DB8 /* AppDelegate.swift */,
+				EF86763820D4880F00CC8DB8 /* ViewController.swift */,
+				EF86763A20D4880F00CC8DB8 /* Main.storyboard */,
+				EF86763D20D4881000CC8DB8 /* Assets.xcassets */,
+				EF86763F20D4881000CC8DB8 /* LaunchScreen.storyboard */,
+				EF86764220D4881000CC8DB8 /* Info.plist */,
+				EF35E80D2139AB9A00C65371 /* AutoCompleteUIView.swift */,
+			);
+			path = TypeAhead;
+			sourceTree = "<group>";
+		};
+		EF86764A20D4881000CC8DB8 /* TypeAheadTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF86764B20D4881000CC8DB8 /* TypeAheadTests.swift */,
+				EF86764D20D4881000CC8DB8 /* Info.plist */,
+			);
+			path = TypeAheadTests;
+			sourceTree = "<group>";
+		};
+		EF86765520D4881000CC8DB8 /* TypeAheadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF86765620D4881000CC8DB8 /* TypeAheadUITests.swift */,
+				EF86765820D4881000CC8DB8 /* Info.plist */,
+			);
+			path = TypeAheadUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF86763220D4880E00CC8DB8 /* TypeAhead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF86765B20D4881000CC8DB8 /* Build configuration list for PBXNativeTarget "TypeAhead" */;
+			buildPhases = (
+				EF86762F20D4880E00CC8DB8 /* Sources */,
+				EF86763020D4880E00CC8DB8 /* Frameworks */,
+				EF86763120D4880E00CC8DB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TypeAhead;
+			productName = TypeAhead;
+			productReference = EF86763320D4880F00CC8DB8 /* TypeAhead.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF86764620D4881000CC8DB8 /* TypeAheadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF86765E20D4881000CC8DB8 /* Build configuration list for PBXNativeTarget "TypeAheadTests" */;
+			buildPhases = (
+				EF86764320D4881000CC8DB8 /* Sources */,
+				EF86764420D4881000CC8DB8 /* Frameworks */,
+				EF86764520D4881000CC8DB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF86764920D4881000CC8DB8 /* PBXTargetDependency */,
+			);
+			name = TypeAheadTests;
+			productName = TypeAheadTests;
+			productReference = EF86764720D4881000CC8DB8 /* TypeAheadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF86765120D4881000CC8DB8 /* TypeAheadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF86766120D4881000CC8DB8 /* Build configuration list for PBXNativeTarget "TypeAheadUITests" */;
+			buildPhases = (
+				EF86764E20D4881000CC8DB8 /* Sources */,
+				EF86764F20D4881000CC8DB8 /* Frameworks */,
+				EF86765020D4881000CC8DB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF86765420D4881000CC8DB8 /* PBXTargetDependency */,
+			);
+			name = TypeAheadUITests;
+			productName = TypeAheadUITests;
+			productReference = EF86765220D4881000CC8DB8 /* TypeAheadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF86762B20D4880E00CC8DB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Abhishek Kumar";
+				TargetAttributes = {
+					EF86763220D4880E00CC8DB8 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EF86764620D4881000CC8DB8 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EF86763220D4880E00CC8DB8;
+					};
+					EF86765120D4881000CC8DB8 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EF86763220D4880E00CC8DB8;
+					};
+				};
+			};
+			buildConfigurationList = EF86762E20D4880E00CC8DB8 /* Build configuration list for PBXProject "TypeAhead" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF86762A20D4880E00CC8DB8;
+			productRefGroup = EF86763420D4880F00CC8DB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF86763220D4880E00CC8DB8 /* TypeAhead */,
+				EF86764620D4881000CC8DB8 /* TypeAheadTests */,
+				EF86765120D4881000CC8DB8 /* TypeAheadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF86763120D4880E00CC8DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF86764120D4881000CC8DB8 /* LaunchScreen.storyboard in Resources */,
+				EF86763E20D4881000CC8DB8 /* Assets.xcassets in Resources */,
+				EF86763C20D4880F00CC8DB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF86764520D4881000CC8DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF86765020D4881000CC8DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF86762F20D4880E00CC8DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF86763920D4880F00CC8DB8 /* ViewController.swift in Sources */,
+				EF86763720D4880F00CC8DB8 /* AppDelegate.swift in Sources */,
+				EF35E80E2139AB9A00C65371 /* AutoCompleteUIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF86764320D4881000CC8DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF86764C20D4881000CC8DB8 /* TypeAheadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF86764E20D4881000CC8DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF86765720D4881000CC8DB8 /* TypeAheadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF86764920D4881000CC8DB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF86763220D4880E00CC8DB8 /* TypeAhead */;
+			targetProxy = EF86764820D4881000CC8DB8 /* PBXContainerItemProxy */;
+		};
+		EF86765420D4881000CC8DB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF86763220D4880E00CC8DB8 /* TypeAhead */;
+			targetProxy = EF86765320D4881000CC8DB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF86763A20D4880F00CC8DB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF86763B20D4880F00CC8DB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF86763F20D4881000CC8DB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF86764020D4881000CC8DB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF86765920D4881000CC8DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF86765A20D4881000CC8DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF86765C20D4881000CC8DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X627TQ5VKF;
+				INFOPLIST_FILE = TypeAhead/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = personnel.TypeAhead;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF86765D20D4881000CC8DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X627TQ5VKF;
+				INFOPLIST_FILE = TypeAhead/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = personnel.TypeAhead;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF86765F20D4881000CC8DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X627TQ5VKF;
+				INFOPLIST_FILE = TypeAheadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = personnel.TypeAheadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TypeAhead.app/TypeAhead";
+			};
+			name = Debug;
+		};
+		EF86766020D4881000CC8DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X627TQ5VKF;
+				INFOPLIST_FILE = TypeAheadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = personnel.TypeAheadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TypeAhead.app/TypeAhead";
+			};
+			name = Release;
+		};
+		EF86766220D4881000CC8DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X627TQ5VKF;
+				INFOPLIST_FILE = TypeAheadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = personnel.TypeAheadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TypeAhead;
+			};
+			name = Debug;
+		};
+		EF86766320D4881000CC8DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X627TQ5VKF;
+				INFOPLIST_FILE = TypeAheadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = personnel.TypeAheadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TypeAhead;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF86762E20D4880E00CC8DB8 /* Build configuration list for PBXProject "TypeAhead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF86765920D4881000CC8DB8 /* Debug */,
+				EF86765A20D4881000CC8DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF86765B20D4881000CC8DB8 /* Build configuration list for PBXNativeTarget "TypeAhead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF86765C20D4881000CC8DB8 /* Debug */,
+				EF86765D20D4881000CC8DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF86765E20D4881000CC8DB8 /* Build configuration list for PBXNativeTarget "TypeAheadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF86765F20D4881000CC8DB8 /* Debug */,
+				EF86766020D4881000CC8DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF86766120D4881000CC8DB8 /* Build configuration list for PBXNativeTarget "TypeAheadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF86766220D4881000CC8DB8 /* Debug */,
+				EF86766320D4881000CC8DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF86762B20D4880E00CC8DB8 /* Project object */;
+}
