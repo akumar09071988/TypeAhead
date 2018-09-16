@@ -8,18 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    
-    
+class ViewController: UIViewController, AutoCompleteDelegate {
     
     @IBOutlet weak var textField: UITextField!
     var autoCompleteView: AutoCompleteUIView?
+    
+    //TODO: delete
+    var data = [String]()
     
     //lifecycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.autoCompleteView = AutoCompleteUIView.createAutoCompleteViewFor(textField: textField)
+        self.autoCompleteView?.delegate = self as? AutoCompleteDelegate
+        
+        for i in 1...100 {
+            self.data.append("\(i)")
+        }
     }
     
     override func viewDidLoad() {
@@ -34,8 +39,20 @@ class ViewController: UIViewController {
     }
     
     
+    //MARK: Autcomplete delegate
+    func updateListForText(inputText: String, completion: @escaping ([String]) -> ()) {
+        var result = [String]()
+        for i in 0..<data.count {
+            if (data[i].contains(inputText)) {
+                result.append(data[i])
+            }
+        }
+        completion(result)
+    }
     
-    
+    func getSelectedValue(selectedValue: String) {
+        print(selectedValue)
+    }
 
 
 }

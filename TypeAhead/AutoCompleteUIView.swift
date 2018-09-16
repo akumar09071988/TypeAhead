@@ -9,15 +9,25 @@
 import Foundation
 import UIKit
 
-class AutoCompleteUIView: UIView, UITableViewDataSource {
+protocol AutoCompleteDelegate {
+    func updateListForText(inputText: String, completion: @escaping([String]) -> ())
+    func getSelectedValue(selectedValue: String)
+}
+
+class AutoCompleteUIView: UIView, UITableViewDataSource, UITableViewDelegate {
     
     //property
     var textField: UITextField?
     var tableView: UITableView?
+    var tableDataSource = [String]()
+    var delegate: AutoCompleteDelegate?
+    
+    
 
     
     static func createAutoCompleteViewFor(textField: UITextField) -> AutoCompleteUIView {
         let autoCompleteView = AutoCompleteUIView(textField: textField)
+        
         return autoCompleteView
     }
     
@@ -61,6 +71,7 @@ class AutoCompleteUIView: UIView, UITableViewDataSource {
         if self.tableView == nil {
             self.tableView = UITableView(frame: CGRect.zero)
             self.tableView?.dataSource = self
+            self.tableView?.delegate = self
         }
         guard let tempTableView = self.tableView,
         let tempTextField = self.textField else {return}
@@ -82,6 +93,14 @@ class AutoCompleteUIView: UIView, UITableViewDataSource {
     @objc open func textFieldDidChange() {
         print(self.textField?.isFirstResponder)
         print(self.textField?.text)
+        if (self.tableView == nil) {
+            addTableViewToView()
+        }
+        if let text = self.textField?.text {
+            self.searchData(text)
+            self.tableView?.reloadData()
+        }
+        
     }
     
     @objc open func textFieldEditBegin() {
@@ -103,7 +122,7 @@ class AutoCompleteUIView: UIView, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2;
+        return tableDataSource.count > 5 ? 5 : tableDataSource.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -114,11 +133,39 @@ class AutoCompleteUIView: UIView, UITableViewDataSource {
             cell = UITableViewCell(style: UITableViewCellStyle.subtitle,
                                    reuseIdentifier: "simpleCell")
         }
-        cell.textLabel?.text = "some data"
+        cell.textLabel?.text = tableDataSource[indexPath.row]
         cell.detailTextLabel?.text = "data "
-        cell.backgroundColor = UIColor.blue
+        cell.backgroundColor = UIColor.clear
         return cell;
     }
+    
+    //MARK: tableview delegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let text = tableDataSource[indexPath.row]
+        if let delegate = self.delegate, delegate.getSelectedValue != nil {
+            delegate.getSelectedValue(selectedValue: text)
+            self.textField?.text = text
+            self.tableView?.removeFromSuperview()
+            self.tableView = nil
+        }
+    }
+    
+    
+    //MARK: private functions
+    private func searchData(_ text: String) {
+        tableDataSource = [String]()
+        if let delegate = self.delegate, delegate.updateListForText != nil {
+            //tableDataSource = delegate.updateListForText(inputText: text)
+            delegate.updateListForText(inputText: text) {(list) in
+                self.tableDataSource = list
+            }
+        }
+        print(tableDataSource.count)
+        
+    }
+    
+    
     
     
 }
